@@ -1,6 +1,7 @@
 // スライダーライブラリ Swiper.js
 
 //https://garigaricode.com/swiper/
+//https://www.puzzle-web.jp/archive/2256/
 var init = function () {
   new Swiper('.swiper-container', {
     direction: 'horizontal',

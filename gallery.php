@@ -18,7 +18,7 @@
         content="これは社会実験だ。現状からぬけだしたい人たちによる、等身大のさらけ出しがここに。オンラインコミュニティ前田デザイン室のメンバーたちによる、１年間のリアルな「ぬけだし」の記録。">
     <title>たぬきぎゃらりぃ｜前田デザイン室</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- <link href="path/to/lightbox.css" rel="stylesheet" /> -->
+    <link href="css/lightbox.min.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800&family=Noto+Sans+JP:wght@500;700;900&display=swap"
         rel="stylesheet">
@@ -64,9 +64,64 @@
         <section class="p-archive" id="archive">
             <div class="l-container">
                 <h2 class="c-title">たぬきぎゃらりい</h2>
+
+                <h3 class="p-galleryTitle c-title">たぬき会</h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- 最終的にcsvでバナー管理できるようにしたい -->
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202008.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202009.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202012.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202008.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202009.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202012.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202008.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202009.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202012.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202008.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
+                                    src="images/banner/drink202009.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <!-- ※モーダル未実装 -->
+                <h3 class="p-galleryTitle c-title">ぬけだ荘ラジオ</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide slide-item">
                             <img src="images/banner/drink202008.jpg" alt="">
                         </div>
@@ -120,7 +175,7 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./js/inview.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--<script src="path/to/lightbox.js"></script> -->
+    <script src="js/lightbox.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="./js/app.js"></script>
 </body>

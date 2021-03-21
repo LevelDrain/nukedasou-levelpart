@@ -66,8 +66,14 @@
 
                 <?php
                     // CSV読み込み
-                    // ※ CSVは上の方が新しいバナーになるように保存すること
                     $filepath='csv/bannerlist.csv';
+                    $record=[];
+                    if(($handle=fopen($filepath,'r'))!==false){
+                        while(($data=fgetcsv($handle,1000,','))!==false){
+                            array_unshift($record,$data); //下にある方が先になるよう配列追加
+                        }
+                    }
+                    fclose($handle);
                 ?>
 
                 <h3 class="p-galleryTitle c-title">たぬき会</h3>
@@ -75,19 +81,16 @@
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
                         <?php
-                            if(($handle=fopen($filepath,'r'))!==false):
-                            while(($record=fgetcsv($handle,1000,','))!==false):
+                            foreach($record as $id=>$contents):
                         ?>
-                        <?php if($record[1]=='drink'): // 泥酔会（テスト用） ?>
+                        <?php if($contents[1]=='drink'): // 泥酔会（テスト用） ?>
                         <div class="swiper-slide slide-item">
-                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="drink"><img
-                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
+                            <a href="images/banner/<?= $contents[2] ?>" data-lightbox="drink"><img
+                                    src="images/banner/<?= $contents[2] ?>" alt=""></a>
                         </div>
                         <?php endif; ?>
 
-                        <?php endwhile; ?>
-                        <?php fclose($handle); ?>
-                        <?php endif; ?>
+                        <?php endforeach; ?>
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -99,19 +102,16 @@
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
                         <?php
-                            if(($handle=fopen($filepath,'r'))!==false):
-                            while(($record=fgetcsv($handle,1000,','))!==false):
+                            foreach($record as $id=>$contents):
                         ?>
-                        <?php if($record[1]=='radio'): // ラジオ ?>
+                        <?php if($contents[1]=='radio'): // 泥酔会（テスト用） ?>
                         <div class="swiper-slide slide-item">
-                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="radio"><img
-                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
+                            <a href="images/banner/<?= $contents[2] ?>" data-lightbox="radio"><img
+                                    src="images/banner/<?= $contents[2] ?>" alt=""></a>
                         </div>
                         <?php endif; ?>
 
-                        <?php endwhile; ?>
-                        <?php fclose($handle); ?>
-                        <?php endif; ?>
+                        <?php endforeach; ?>
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -122,7 +122,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
-                        
+
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -133,7 +133,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
-                        
+
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -145,19 +145,16 @@
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
                         <?php
-                            if(($handle=fopen($filepath,'r'))!==false):
-                            while(($record=fgetcsv($handle,1000,','))!==false):
+                            foreach($record as $id=>$contents):
                         ?>
-                        <?php if($record[1]=='others'): // その他 ?>
+                        <?php if($contents[1]=='others'): // 泥酔会（テスト用） ?>
                         <div class="swiper-slide slide-item">
-                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="others"><img
-                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
+                            <a href="images/banner/<?= $contents[2] ?>" data-lightbox="others"><img
+                                    src="images/banner/<?= $contents[2] ?>" alt=""></a>
                         </div>
                         <?php endif; ?>
 
-                        <?php endwhile; ?>
-                        <?php fclose($handle); ?>
-                        <?php endif; ?>
+                        <?php endforeach; ?>
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -166,7 +163,7 @@
 
             </div>
         </section>
-        
+
     </main>
     <!-- End Main -->
 

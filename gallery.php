@@ -58,109 +58,115 @@
         </div>
     </header>
 
-    <!-- https://lokeshdhakar.com/projects/lightbox2/ -->
     <!-- Start Main -->
     <main class="l-main">
         <section class="p-archive" id="archive">
             <div class="l-container">
                 <h2 class="c-title">たぬきぎゃらりい</h2>
 
+                <?php
+                    // CSV読み込み
+                    // ※ CSVは上の方が新しいバナーになるように保存すること
+                    $filepath='csv/bannerlist.csv';
+                ?>
+
                 <h3 class="p-galleryTitle c-title">たぬき会</h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <!-- 最終的にcsvでバナー管理できるようにしたい -->
+                        <!-- ここからswiperテンプレ -->
+                        <?php
+                            if(($handle=fopen($filepath,'r'))!==false):
+                            while(($record=fgetcsv($handle,1000,','))!==false):
+                        ?>
+                        <?php if($record[1]=='drink'): // 泥酔会（テスト用） ?>
                         <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202008.jpg" alt=""></a>
+                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="drink"><img
+                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
                         </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202009.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202012.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202008.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202009.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202012.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202008.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202009.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202012.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202012.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202008.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202008.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <a href="images/banner/drink202009.jpg" data-lightbox="deisuikai"><img
-                                    src="images/banner/drink202009.jpg" alt=""></a>
-                        </div>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                        <?php fclose($handle); ?>
+                        <?php endif; ?>
+                        <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
 
-                <!-- ※モーダル未実装 -->
                 <h3 class="p-galleryTitle c-title">ぬけだ荘ラジオ</h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <!-- ここからswiperテンプレ -->
+                        <?php
+                            if(($handle=fopen($filepath,'r'))!==false):
+                            while(($record=fgetcsv($handle,1000,','))!==false):
+                        ?>
+                        <?php if($record[1]=='radio'): // ラジオ ?>
                         <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202008.jpg" alt="">
+                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="radio"><img
+                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
                         </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202009.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202012.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202008.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202009.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202012.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202008.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202009.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202012.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202008.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide slide-item">
-                            <img src="images/banner/drink202009.jpg" alt="">
-                        </div>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                        <?php fclose($handle); ?>
+                        <?php endif; ?>
+                        <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+
+                <h3 class="p-galleryTitle c-title">泥酔会</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ここからswiperテンプレ -->
+                        
+                        <!-- テンプレ終了 -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <h3 class="p-galleryTitle c-title">ぬけだ荘の歩き方</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ここからswiperテンプレ -->
+                        
+                        <!-- テンプレ終了 -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <h3 class="p-galleryTitle c-title">その他</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ここからswiperテンプレ -->
+                        <?php
+                            if(($handle=fopen($filepath,'r'))!==false):
+                            while(($record=fgetcsv($handle,1000,','))!==false):
+                        ?>
+                        <?php if($record[1]=='others'): // その他 ?>
+                        <div class="swiper-slide slide-item">
+                            <a href="images/banner/<?= $record[2] ?>" data-lightbox="others"><img
+                                    src="images/banner/<?= $record[2] ?>" alt=""></a>
+                        </div>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                        <?php fclose($handle); ?>
+                        <?php endif; ?>
+                        <!-- テンプレ終了 -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
             </div>
         </section>
+        
     </main>
     <!-- End Main -->
 

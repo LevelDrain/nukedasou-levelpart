@@ -1,25 +1,22 @@
 // スライダーライブラリ Swiper.js
 
-//https://garigaricode.com/swiper/
-//https://www.puzzle-web.jp/archive/2256/
 var init = function () {
-  new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    slidesPerView: 1.1,
-    centerdSlides:true,
-    breakpoints: {
-      768: {
-        slidesPerView: 3.5,
-        centerdSlides:true,
-      }
-    },
-    autoplay: false,
-    loop: false,
-    navigation: {
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next'
-    },
-  });
+    var slides = $(this).find('.swiper-slide');
+    // スライドが4枚を下回るとループオフ（バグ修正のため）
+    var slidable = (slides >= 4);
+
+    new Swiper('.swiper-container', {
+        loop: slidable,
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        centerdSlides: true,
+        autoplay: false,
+        navigation: {
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next'
+        },
+    });
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -220,19 +220,19 @@ a:hover {
     text-align: center;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .l-container {
         max-width: 90%;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .l-container {
         width: 710px;
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .l-container {
         width: 100%;
         padding: 0 20px;
@@ -248,14 +248,14 @@ a:hover {
     align-items: center;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .l-flex--tab {
         display: flex;
         align-items: start;
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .l-flex--pc {
         display: flex;
         align-items: start;
@@ -286,7 +286,7 @@ a:hover {
     max-width: 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .l-header {
         position: fixed;
     }
@@ -333,22 +333,22 @@ a:hover {
 }
 
 .p-residentList .c-title::before {
-    background: url(../images/common/icon_list.png)no-repeat;
+    background: url(../images/common/icon_list.png) no-repeat;
     background-size: contain;
 }
 
 .p-activityReport .c-title::before {
-    background: url(../images/common/icon_report.png)no-repeat;
+    background: url(../images/common/icon_report.png) no-repeat;
     background-size: contain;
 }
 
 .p-greeting .c-title::before {
-    background: url(../images/common/icon_mail.png)no-repeat;
+    background: url(../images/common/icon_mail.png) no-repeat;
     background-size: contain;
 }
 
 .p-creator .c-title::before {
-    background: url(../images/common/icon_creator.png)no-repeat;
+    background: url(../images/common/icon_creator.png) no-repeat;
     background-size: contain;
 }
 
@@ -360,7 +360,7 @@ a:hover {
     margin-top: 1.25rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .c-title {
         font-size: 2.25rem;
     }
@@ -444,7 +444,7 @@ a:hover {
     display: none;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .c-toggleButton {
         display: none;
     }
@@ -517,7 +517,7 @@ Header
     margin-right: 4px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-header {
         padding: .5rem 0;
     }
@@ -539,7 +539,7 @@ Header
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-heder__menu {
         margin-left: 3.125rem;
     }
@@ -595,7 +595,7 @@ Main visual
     top: .73rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-mainVisual {
         padding-top: 3rem;
         width: 600px;
@@ -686,7 +686,7 @@ What's nukedasou
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-what__animation {
         width: 290px;
         margin-top: 2rem;
@@ -718,7 +718,7 @@ What's nukedasou
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-what {
         margin-top: 12.5rem;
     }
@@ -858,7 +858,7 @@ Resident List
     z-index: 11;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-listItem__box__empty::after {
         width: 50%;
         height: auto;
@@ -867,7 +867,7 @@ Resident List
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-listItem__box__empty::after {
         width: 45%;
         left: 20%;
@@ -880,7 +880,7 @@ Resident List
 }
 
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .p-residentList {
         margin-top: 8rem;
     }
@@ -895,7 +895,7 @@ Resident List
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-residentList {
         margin-top: 12.5rem;
     }
@@ -964,7 +964,7 @@ Resident List
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-list__wrap {
         width: 1040px;
         height: 769px;
@@ -982,7 +982,6 @@ Resident List
         height: 88px;
     }
 }
-
 
 
 /*
@@ -1009,7 +1008,7 @@ Report
     padding: 0 1.25rem;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .p-activityReport {
         margin-top: 8rem;
     }
@@ -1024,7 +1023,7 @@ Report
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-activityReport {
         margin-top: 12.5rem;
     }
@@ -1066,7 +1065,7 @@ Report
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-report__wrap {
         width: 1040px;
         margin: 2rem auto 0;
@@ -1118,7 +1117,7 @@ Greeting
     margin-right: .5rem;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .p-greeting {
         margin-top: 8rem;
     }
@@ -1128,13 +1127,13 @@ Greeting
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-greeting__pic {
         margin: 2rem auto 1rem;
     }
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width: 1080px) {
     .p-greeting {
         margin-top: 15rem;
     }
@@ -1172,13 +1171,13 @@ Creator
     text-decoration: underline;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .p-creator {
         margin-top: 8rem;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-creator {
         margin-top: 12.5rem;
     }
@@ -1229,7 +1228,7 @@ Footer
     background-color: #f4f4f4;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .p-footer__logo {
         display: none;
     }
@@ -1263,7 +1262,7 @@ Footer
     display: none;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .sp_br {
         display: none;
     }
@@ -1274,10 +1273,17 @@ Footer
 }
 
 /*-- swiper（レベル担当分） --*/
+.p-gallery--container {
+    position: relative;
+    max-width: 1040px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .swiper-container {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 1rem;
     z-index: 1;
 }
@@ -1286,9 +1292,9 @@ Footer
     align-items: center;
 }
 
-/* .swiper-slide {
+.swiper-slide {
     width: 280px;
-} */
+}
 
 .swiper-slide img {
     width: 100%;
@@ -1300,18 +1306,14 @@ Footer
 
 .swiper-button-next {
     right: 0;
-    background-image: url(../images/button/next.png);
-    width: calc(var(--swiper-navigation-size)/ 40 * 27);
-}
-
-.swiper-slide-prev {
-    opacity: 0.5;
+    background: url(../images/common/allow.svg) no-repeat center / contain;
+    width: 25px;
 }
 
 .swiper-button-prev {
     left: 0;
-    background-image: url(../images/button/next.png);
-    width: calc(var(--swiper-navigation-size)/ 40 * 27);
+    background: url(../images/common/allow.svg) no-repeat center / contain;
+    width: 25px;
     transform: scale(-1, 1);
 }
 
@@ -1324,48 +1326,65 @@ Footer
     content: '';
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .swiper-slide-next {
         opacity: 1;
     }
 
-    .swiper-slide-next+.swiper-slide+.swiper-slide {
-        opacity: 0.5;
-    }
-
     .swiper-button-next {
         right: 0;
+        width: 35px;
     }
 
     .swiper-button-prev {
         left: 0;
+        width: 35px;
+    }
+}
+
+/* 透過位置の微調整（1080px以下で3番目が透過） */
+@media screen and (min-width: 1080px){
+    .swiper-slide-next + .swiper-slide + .swiper-slide {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    .swiper-slide-next + .swiper-slide {
+        opacity: 0.5;
     }
 }
 
 /* 題字など基本スタイル（レベル担当分） */
-.p-galleryTitle.c-title {
+.p-gallery.c-title {
     position: relative;
     text-align: left;
     margin-bottom: 0.5rem;
 }
 
-.p-galleryTitle.c-title::after {
+.p-gallery.c-title::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 5px;
     bottom: 0;
     left: 0;
-    background-image: url(../images/common/bar_sp.png);
+    background: url(../images/common/bar_sp.svg) no-repeat center / contain;
 }
 
-@media screen and (min-width:768px) {
-    .p-galleryTitle.c-title {
+@media screen and (min-width: 768px) {
+    .p-gallery.c-title {
         margin-bottom: 1rem;
     }
 
-    .p-galleryTitle.c-title::after {
+    .p-gallery.c-title::after {
         height: 6px;
-        background-image: url(../images/common/bar_pc.png);
+        background: url(../images/common/bar_pc.svg) no-repeat center / contain;
     }
+}
+
+/* Lightbox位置調整 */
+div#lightbox {
+    top: 50% !important;
+    transform: translateY(-50%);
 }

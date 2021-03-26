@@ -1272,7 +1272,11 @@ Footer
     }
 }
 
-/*-- swiper（レベル担当分） --*/
+/*
+  以下、レベル担当分
+----------------------------------------------- */
+
+/*-- swiper --*/
 .p-gallery--container {
     position: relative;
     max-width: 1040px;
@@ -1298,6 +1302,10 @@ Footer
 
 .swiper-slide img {
     width: 100%;
+}
+
+.swiper-slide-prev {
+    opacity: 0.5;
 }
 
 .swiper-slide-next {
@@ -1355,7 +1363,7 @@ Footer
     }
 }
 
-/* 題字など基本スタイル（レベル担当分） */
+/* ギャラリー限定、題字など基本スタイル */
 .p-gallery.c-title {
     position: relative;
     text-align: left;

@@ -87,9 +87,9 @@ function h($s)
                         <?php
                         foreach ($record as $id => $contents):
                             ?>
-                            <?php if ($contents[1] == 'drink'): // 泥酔会（テスト用） ?>
+                            <?php if ($contents[1] == 'tanuki'): // たぬき会 ?>
                             <div class="swiper-slide slide-item">
-                                <a href="images/banner/<?= $contents[2] ?>" data-lightbox="drink"><img
+                                <a href="images/banner/<?= $contents[2] ?>" data-lightbox="tanuki"><img
                                             src="images/banner/<?= $contents[2] ?>" alt=""></a>
                             </div>
                         <?php endif; ?>
@@ -108,7 +108,7 @@ function h($s)
                         <?php
                         foreach ($record as $id => $contents):
                             ?>
-                            <?php if ($contents[1] == 'radio'): // 泥酔会（テスト用） ?>
+                            <?php if ($contents[1] == 'radio'): // ラジオ ?>
                             <div class="swiper-slide slide-item">
                                 <a href="images/banner/<?= $contents[2] ?>" data-lightbox="radio"><img
                                             src="images/banner/<?= $contents[2] ?>" alt=""></a>
@@ -126,7 +126,17 @@ function h($s)
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
+                        <?php
+                        foreach ($record as $id => $contents):
+                            ?>
+                            <?php if ($contents[1] == 'drink'): // 泥酔会 ?>
+                            <div class="swiper-slide slide-item">
+                                <a href="images/banner/<?= $contents[2] ?>" data-lightbox="drink"><img
+                                            src="images/banner/<?= $contents[2] ?>" alt=""></a>
+                            </div>
+                        <?php endif; ?>
 
+                        <?php endforeach; ?>
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -137,7 +147,17 @@ function h($s)
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- ここからswiperテンプレ -->
+                        <?php
+                        foreach ($record as $id => $contents):
+                            ?>
+                            <?php if ($contents[1] == 'walk'): // 歩き方 ?>
+                            <div class="swiper-slide slide-item">
+                                <a href="images/banner/<?= $contents[2] ?>" data-lightbox="walk"><img
+                                            src="images/banner/<?= $contents[2] ?>" alt=""></a>
+                            </div>
+                        <?php endif; ?>
 
+                        <?php endforeach; ?>
                         <!-- テンプレ終了 -->
                     </div>
                     <div class="swiper-button-prev"></div>
